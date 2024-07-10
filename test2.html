@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="test-model.js"></script>
+    <script>
+      const root = document.getElementById("root");
+
+      const styles = {
+        position: "absolute",
+        left: "40%",
+        right: "40%",
+        top: "10%",
+        bottom: "10%",
+        backgroundColor: "#000000",
+      };
+
+      const logincon = elementMaker("div", styles, "");
+
+      root.appendChild(logincon);
+
+      const formmake = elementMaker("form", "", "");
+    </script>
+  </body>
+</html>

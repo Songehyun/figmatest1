@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      const root = document.getElementById("root");
+      root.style.backgroundColor = "gray";
+      const logincon = document.createElement("div");
+      logincon.style.position = "absolute";
+      logincon.style.left = "40%";
+      logincon.style.right = "40%";
+      logincon.style.top = "10%";
+      logincon.style.bottom = "10%";
+      logincon.style.backgroundColor = "#000000";
+      root.appendChild(logincon);
+      const formmake = document.createElement("form");
+      logincon.appendChild(formmake);
+      const inputmake = document.createElement("input");
+      inputmake.style.position = "absolute";
+      inputmake.style.left = "10.67%";
+      inputmake.style.right = "10.52%";
+      inputmake.style.top = "51.25%";
+      inputmake.style.bottom = "37.08%";
+      inputmake.style.backgroundColor = "#d9d9d9";
+      inputmake.type = "text";
+      inputmake.placeholder = "아이디";
+      formmake.appendChild(inputmake);
+      const buttonmake = document.createElement("button");
+      buttonmake.style.position = "absolute";
+      buttonmake.style.left = "50.07%";
+      buttonmake.style.right = "10.52%";
+      buttonmake.style.top = "73.5%";
+      buttonmake.style.bottom = "15.92%";
+      buttonmake.type = "submit";
+      buttonmake.innerHTML = "결정";
+      buttonmake.style.backgroundColor = "#33FF00";
+      formmake.appendChild(buttonmake);
+    </script>
+  </body>
+</html>
